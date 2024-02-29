@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/css/landing.css">
+    </head>
+    <body>
+        <div class="header" style="display: flex;">
+            <h1>Talk With</h1>
+            <!-- HTML for the button -->
+            <div>
+                <button type="button" id="openModalBtn" class="signup-button">Signup</button>
+                <button type="button" id="openInModalBtn" class="signup-button">Sign In</button>
+            </div>
+
+
+        </div>
+        <div class="container">
+
+            <h1>Welcome to Talk With XYZ!</h1>
+            <p>Connect, communicate, and talk with ease.</p>
+            <a href="/video_chat">
+                <button class="join-button">Start Chat</button>
+            </a>
+        </div>
+        <div id="messageContainer" class="message-container"></div>
+        <div class="footer">
+            &copy; 2023 VideoChatApp. All rights reserved.
+        </div>
+        <%- include('include/signupModal.ejs') %>
+        <%- include('include/signInModal.ejs') %>
+
+        <script src="/js/sign.js"></script>
+    </body>
+</html>
